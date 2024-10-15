@@ -1,7 +1,7 @@
 # ConstructionComplexityCalculator
 This tool calculates the complexity measure described in Nelson (2024). If you use this tool in your research, please cite Nelson's (2024) paper.
 
-The complexity score for one text cna be calculated by pasting a text into the textbox and multiple texts can be analysed by clicking "upload" and selecting the desired number of texts.
+The complexity score for one text cna be calculated by pasting a text into the textbox and multiple texts can be analysed by clicking "upload" and selecting the desired number of texts. In both cases, the "Process Input" button must be clicked.
 
 Full details about the measure are available in an Open Acess paper:
 Nelson, R. (2024). Using constructions to measure developmental language complexity. Cognitive Linguistics. https://doi.org/10.1515/cog-2023-0062
