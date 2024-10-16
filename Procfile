@@ -1,2 +1,1 @@
-web:
-python ConstructionComplexityCalculator.py
+web: python ConstructionComplexityCalculator.py
