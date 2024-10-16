@@ -1,4 +1,7 @@
 # ConstructionComplexityCalculator
+
+Access the tool online here: https://mybinder.org/v2/gh/cooperchris17/ConstructionComplexityCalculator/HEAD?urlpath=%2Fvoila%2Frender%2Fconstruction_complexity_div_prod.ipynb
+
 This tool calculates the complexity measure described in Nelson (2024). If you use this tool in your research, please cite Nelson's (2024) paper.
 
 The complexity score for one text cna be calculated by pasting a text into the textbox and multiple texts can be analysed by clicking "upload" and selecting the desired number of texts. In both cases, the "Process Input" button must be clicked.
