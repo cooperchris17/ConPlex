@@ -1,4 +1,4 @@
-anyio @ file:///C:/b/abs_847uobe7ea/croot/anyio_1706220224037/work
+#anyio @ file:///C:/b/abs_847uobe7ea/croot/anyio_1706220224037/work
 argon2-cffi @ file:///opt/conda/conda-bld/argon2-cffi_1645000214183/work
 argon2-cffi-bindings @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/argon2-cffi-bindings_1699549801117/work
 arrow==1.3.0
