@@ -5,14 +5,10 @@ import os
 import platform
 import scipy.stats as stats
 
-# Set a directory within the /tmp directory for Stanza resources
-stanza_dir = os.path.join('/tmp', 'stanza_resources')
-os.makedirs(stanza_dir, exist_ok=True)
+app = Flask(__name__)
 
 # Initialize the Stanza pipeline with the custom directory
-nlp = stanza.Pipeline("en", dir=stanza_dir)
-
-app = Flask(__name__)
+nlp = stanza.Pipeline("en")
 
 # Function to calculate diversity (Shannon's entropy) of a sentence
 def sentence_diversity_calc(tags):
