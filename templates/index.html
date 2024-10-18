@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Construction Complexity Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+            color: black;
+            text-align: center; /* Center align all text */
+        }
+        .header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center; /* Center align header text */
+        }
+        form {
+            display: inline-block; /* Center the form */
+            text-align: left; /* Align form elements to the left */
+        }
+        label, textarea, input[type="file"], input[type="submit"] {
+            display: block;
+            margin: 0 auto; /* Center form elements */
+        }
+        textarea {
+            width: 100%; /* Adjust width as needed */
+        }
+    </style>
+    <script>
+        function showProcessingMessage() {
+            document.getElementById('processing-message').style.display = 'block';
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            showProcessingMessage();
+
+            const formData = new FormData(event.target);
+            fetch('/process', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('processing-message').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('processing-message').innerHTML = 'An error occurred during processing.';
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Construction Complexity Calculator</h1>
+    </div>
+    <p>This tool calculates the complexity measure described in Nelson (2024).</p>
+    <p>For multiple texts, click "upload" and select the .txt files. For one text, paste it into the box. When your texts are ready, click "Process Input".</p>
+    <p>Refresh your browser to run the tool on a different text or set of texts (after processing has finished).</p>
+    <br>
+    <form action="/process" method="post" enctype="multipart/form-data" onsubmit="handleFormSubmit(event)">
+        <label for="text">Input text:</label><br>
+        <textarea id="text" name="text" rows="10" cols="50" placeholder="Copy and paste text here"></textarea><br><br>
+        <label for="files">Upload files:</label><br>
+        <input type="file" id="files" name="files" multiple accept=".txt"><br><br>
+        <input type="submit" value="Process Input">
+    </form>
+    <p id="processing-message" style="display:none;">Processing (this could take some time)...</p>
+    <p>Read the Open Access paper for full details about the complexity measure and please cite it in your research if you use the tool:</p>
+    <p>Nelson, R. (2024). Using constructions to measure developmental language complexity. Cognitive Linguistics. <a href="https://doi.org/10.1515/cog-2023-0062">https://doi.org/10.1515/cog-2023-0062</a></p>
+</body>
+</html>
