@@ -4,7 +4,7 @@ The Construction Complexity Calculator is a GUI tool that calculates the complex
 
 Download the tool here: 
 
-![GUI Screenshot](https://github.com/cooperchris17/ConstructionComplexityCalculator/blob/supplementary/GUI_screenshot.png?raw=true)
+![GUI Screenshot](https://github.com/cooperchris17/ConstructionComplexityCalculator/blob/main/supplementary/GUI_screenshot.png?raw=true)
 
 
 The complexity score for one text can be calculated by pasting a text into the textbox and clicking "Process Text Input". Multiple texts can be analysed by clicking "Upload and Process Files" and selecting the desired number of texts. For multiple files, the processing will begin immediately.
