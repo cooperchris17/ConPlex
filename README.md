@@ -4,6 +4,9 @@ The Construction Complexity Calculator is a GUI tool that calculates the complex
 
 Download the tool here: 
 
+![GUI Screenshot](https://github.com/cooperchris17/ConstructionComplexityCalculator/blob/main/GUI_screenshot.png?raw=true)
+
+
 The complexity score for one text can be calculated by pasting a text into the textbox and clicking "Process Text Input". Multiple texts can be analysed by clicking "Upload and Process Files" and selecting the desired number of texts. For multiple files, the processing will begin immediately.
 
 The tool uses Stanza to split texts into sentences and tag the texts with treebank-specific (XPOS) tags. After the texts have been tagged, tokens with the universal POS (UPOS) tag of "PUNCT", meaning all punctuation, are excluded from the analysis. The entropy used in the sentence diversity and sentence productivity calculation (see Nelson (2024) for more details) is calculated using the entropy() function in SciPy. 
