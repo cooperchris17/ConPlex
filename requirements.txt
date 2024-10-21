@@ -1,5 +1,0 @@
-﻿Flask==3.0.3
-pandas==2.2.3
-scipy==1.14.1
-stanza==1.9.2
-gunicorn
