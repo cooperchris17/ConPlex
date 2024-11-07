@@ -2,7 +2,7 @@
 
 The Construction Complexity Calculator is a GUI tool that calculates the complexity measure described in Nelson (2024), which uses constructions as the unit of language with which the measure is calculated. Full details about the complexity measure are available in an Open Acess paper (Nelson, R. (2024). Using constructions to measure developmental language complexity. Cognitive Linguistics. https://doi.org/10.1515/cog-2023-0062). If you use this tool in your research, please cite Nelson's (2024) paper.
 
-Download the tool here: [LINK TO BE ADDED LATER]
+Download the tool for Windows <a href="[url](https://drive.google.com/file/d/1PljHorFOaXYTIar527GMaDibNAzk6Coo/view?usp=sharing)">here</a>  (Mac and Linux versions to be added later)
 
 <img src="https://github.com/cooperchris17/ConstructionComplexityCalculator/blob/main/supplementary/gui_screenshot.png?raw=true" width="674" height="481">
 
