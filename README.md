@@ -1,4 +1,4 @@
-# ConstructionComplexityCalculator
+# ConPlex (CONstruction ComPLEXity Calculator)
 
 The Construction Complexity Calculator is a GUI tool that calculates the complexity measure described in Nelson (2024), which uses constructions as the unit of language with which the measure is calculated. Full details about the complexity measure are available in an Open Access paper (Nelson, R. (2024). Using constructions to measure developmental language complexity. Cognitive Linguistics. https://doi.org/10.1515/cog-2023-0062). If you use this tool in your research, please cite Nelson's (2024) paper.
 
